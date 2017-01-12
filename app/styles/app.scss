@@ -1,0 +1,304 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: rgb(242,241,237);
+}
+
+
+/*
+ * Nav Bar
+ */
+.navBar {
+  padding-top: 20px;
+  margin-bottom: 30px;
+
+  a {
+    text-decoration: none;
+
+    &:hover{
+      color: rgb(214,99,96);
+    }
+  }
+}
+
+.websiteTitle {
+  padding: 0;
+
+  a {
+    font-family: 'Rock Salt', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(51,51,51);
+  }
+}
+
+.navBarLinksContainer {
+  padding: 0;
+}
+
+.navBarLinks {
+  margin-top: 15px;
+  padding: 0 10px 0;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: rgb(175,168,162);
+}
+
+.aboutMeNavBarLink {
+  padding-right: 0;
+}
+
+.resumeNavBarLink {
+  border-left: 2px solid rgb(175,168,162);
+  border-right: 2px solid rgb(175,168,162);
+}
+
+
+/*
+ * Footer - Social links
+ */
+ .footer {
+   margin: 10px 0 20px 0;
+   padding: 0;
+
+   a {
+     text-decoration: none;
+   }
+ }
+
+ .socialIcon {
+   font-size: 30px;
+   color: rgb(214,99,96);
+   border-right: 3px solid rgba(175,168,162, 0.5);
+   border-bottom: 3px solid rgb(175,168,162);
+   background-color: rgb(255,255,255);
+   margin-right: 4px;
+ }
+
+ .linkedinIcon,
+ .twitterIcon {
+   padding: 5px 9px;
+ }
+
+ .linkedinIcon {
+   &:hover {
+     color: rgb(255,255,255);
+     background-color: rgb(0,119,181);
+   }
+ }
+
+ .twitterIcon {
+   &:hover {
+     color: rgb(217,221,222);
+     background-color: rgb(29,161,242);
+   }
+ }
+
+ .labtocatImage {
+   position: relative;
+   height: 48px;
+   width: 50px;
+   border-right: 3px solid rgba(175,168,162, 0.5);
+   border-bottom: 3px solid rgb(175,168,162);
+   background-color: rgb(255,255,255);
+   margin-right: 4px;
+   top: -6px;
+
+  //  &:hover {
+  //
+  //  }
+ }
+
+.newspaperIcon {
+  padding: 7px 7px 5px 7px;
+  font-size: 28px;
+
+  &:hover{
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+  }
+}
+
+ .contactInfo {
+   font-family: 'Raleway', sans-serif;
+   font-size: 15px;
+   color: rgb(51,51,51);
+   float: right;
+   margin: 13px 0 0 25px;
+
+   &:hover {
+     color: rgb(214,99,96);
+   }
+ }
+
+
+/*
+ * Homepage
+ */
+
+
+/*
+ * About Me
+ */
+.familyPhoto {
+  background-image: url('../images/family-photo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.aboutMe {
+  overflow-x: scroll;
+  font-size: 30px;
+}
+
+
+/*
+ * Resume
+ */
+.resume{
+  background-color: rgb(255,255,255);
+  padding: 0px 75px;
+  list-style: none;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.resumeCategories{
+  color: rgb(51,51,51);
+}
+
+.resumeCategoryHeading{
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: rgb(214,99,96);
+}
+
+.experienceHeading {
+  margin-top: 35px;
+}
+
+.skillsHeading,
+.educationHeading {
+  margin-top: 50px;
+}
+
+.educationHeading {
+  padding-left: 0;
+}
+
+.pdfResumeLink{
+  margin-top: 40px;
+
+  a {
+    color: rgb(255,255,255);
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border-right: 3px solid rgb(215,212,209);
+    border-bottom: 3px solid rgb(175,168,162);
+    background-color: rgb(214,99,96);
+    text-decoration: none;
+    font-size: 15px;
+  }
+}
+
+.pdf{
+  text-transform: uppercase;
+}
+
+.theIronYard {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.learnMore{
+  margin-left: 20px;
+
+  a {
+    text-decoration: none;
+    color: rgb(7,121,194);
+  }
+}
+
+.jobTitle {
+  color: rgb(175,168,162);
+  font-size: 14px;
+  margin: 0;
+}
+
+.jobDescription {
+  color: rgb(175,168,162);
+  margin: 10px 0 50px 0;
+}
+
+.experienceCategory,
+.skillsCategory {
+  border-bottom: 6px solid rgb(242,242,242);
+}
+
+.skillsCategory {
+  padding-bottom: 50px;
+}
+
+.skillsListing{
+  padding-left: 125px;
+  list-style: none;
+  line-height: 40px;
+
+  a {
+    text-decoration: none;
+    color: rgb(175,168,162);
+  }
+}
+
+.educationList {
+  list-style: none;
+}
+
+.schoolName {
+  a {
+    text-decoration: none;
+    color: rgb(51,51,51);
+
+    // &:hover {
+    //
+    // }
+  }
+}
+
+.tiyDegree,
+.niuDegree {
+  color: rgb(175,168,162);
+  font-size: 14px;
+}
+
+.tiyDegree {
+  margin-bottom: 40px;
+}
+
+.niuDegree {
+  margin-bottom: 60px;
+}
+
+.mvc,
+.bachelorOfArts {
+  text-transform: uppercase;
+}
